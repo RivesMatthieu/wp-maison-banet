@@ -41,7 +41,7 @@
         </div>
         <div class="container-fluid border-bottom py-2 px-5">
             <div class="row">
-                <nav class="navbar navbar-expand-xl p-0">
+                <nav class="navbar navbar-expand-xl align-items-center p-0">
                     <div class="navbar-brand">
                         <?php if ( get_theme_mod( 'wp_bootstrap_starter_logo' ) ): ?>
                             <a href="<?php echo esc_url( home_url( '/' )); ?>">
@@ -73,33 +73,5 @@
                 </nav>
             </div>
         </div>
-	</header><!-- #masthead -->
-    <?php if(is_front_page() && !get_theme_mod( 'header_banner_visibility' )): ?>
-        <div id="page-sub-header" <?php if(has_header_image()) { ?>style="background-image: url('<?php header_image(); ?>');" <?php } ?>>
-            <div class="container">
-                <h1>
-                    <?php
-                    if(get_theme_mod( 'header_banner_title_setting' )){
-                        echo esc_attr( get_theme_mod( 'header_banner_title_setting' ) );
-                    }else{
-                        echo 'WordPress + Bootstrap';
-                    }
-                    ?>
-                </h1>
-                <p>
-                    <?php
-                    if(get_theme_mod( 'header_banner_tagline_setting' )){
-                        echo esc_attr( get_theme_mod( 'header_banner_tagline_setting' ) );
-                }else{
-                        echo esc_html__('To customize the contents of this header banner and other elements of your site, go to Dashboard > Appearance > Customize','wp-bootstrap-starter');
-                    }
-                    ?>
-                </p>
-                <a href="#content" class="page-scroller"><i class="fa fa-fw fa-angle-down"></i></a>
-            </div>
-        </div>
-    <?php endif; ?>
-	<div id="content" class="site-content">
-		<div class="container">
-			<div class="row">
-                <?php endif; ?>
+	</header>
+    <?php endif;  ?>
