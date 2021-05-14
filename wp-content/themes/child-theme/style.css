@@ -1,0 +1,48 @@
+/*
+ Theme Name:   Child theme
+ Description:  Child Theme
+ Author:       Matthieu Rives
+ Template:     wp-bootstrap-starter
+ Version:      1.0.0
+*/
+
+:root {
+    --primary: #e8c8a9;
+    --black: black;
+    --gris-menu: #00000099;
+}
+
+* {
+    font-family: 'Poppins';
+}
+
+header#masthead img {
+    height: 25px;
+}
+header#masthead ul li a,
+header#masthead div.container-fluid:first-child a {
+    color: var(--gris-menu);
+    text-decoration: none;
+    transition: all 0.3s ease-out;
+}
+
+header#masthead div.container-fluid:first-child a {
+    padding: 0 10px;
+    font-size: 14px;
+}
+
+header#masthead div.container-fluid:first-child a::before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 600;
+    padding: 0 5px 0 0;
+    font-size: 12px;
+}
+
+header#masthead div.container-fluid:first-child a:first-child::before {
+    content: '\f1cd';
+}
+
+header#masthead div.container-fluid:first-child a:last-child::before {
+    content: '\f292';
+    font-style: italic;
+}
